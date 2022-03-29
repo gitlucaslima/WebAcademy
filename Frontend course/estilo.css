@@ -29,6 +29,10 @@ footer {
     padding-bottom: 5px;
 }
 
+footer a {
+    color: white;
+}
+
 div#logo{
     margin: auto 0;
 }
@@ -38,12 +42,22 @@ div#logo * {
     margin-left: 0.5em;
 }
 
+div#logo span{
+    font-size: 2em;
+    font-weight: bold;
+}
 div#usuarioInfo *, footer span {
     display: block;
     margin-bottom: 0.5em;
 
 }
+div#usuarioInfo span{
+    text-align: right;
+}
 
+div#usuarioInfo button{
+    margin-left: auto;
+}
 /* main */
 main {
     background: linear-gradient( white, gray, #2E4159);
@@ -59,13 +73,13 @@ div.alerta{
     max-width: 400px;
     margin: 1em auto;
     word-wrap: break-word;
-    /* position: absolute;
+    position: absolute;
     top: 0.5em;
     left: 0;
     right: 5em;
     opacity: .9;
     box-shadow: 0px 2px 4px 0px black;
-    border-radius: 5px; */
+    border-radius: 5px;
 }
 
 div.alerta span{
@@ -80,11 +94,11 @@ div.alerta.erro{
     border-color: #700505;
 
 }
-/* div.alerta.sucesso{
+div.alerta.sucesso{
     background-color: #afffba;
     color: #006f05;
     border-color: #006f05;
-} */
+}
 
 
 
@@ -133,7 +147,7 @@ div#comandos{
     border-bottom: 1px solid white; 
 }
 
-table tbody td:last-child {
+table tbody td:last-child, table td.fit {
     width: 1%;
     text-align: center;
     white-space: nowrap;
