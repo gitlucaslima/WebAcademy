@@ -1,0 +1,38 @@
+ul {
+    box-sizing: content-box;
+    list-style-type: none;
+    flex-direction: column-reverse;
+    overflow: hidden;
+    background-color: rgb(12, 21, 102);
+    
+}
+
+
+li a {
+    display: block;
+    color: white;
+    font-size: 0.85em;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li b {
+    display: block;
+    color: red;
+    font-size: 0.85em;
+    text-align: center;
+    padding: 14px 16px ;
+    text-decoration: none;
+}
+
+li c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+li a:hover:not(.active) {
+    background-color: #111; 
+}

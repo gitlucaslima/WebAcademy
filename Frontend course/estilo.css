@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+}
+
+
+/* Header  e footer*/
+
+header, footer{
+    padding: 0.5em;
+    color: white;
+}
+
+header {
+    background-image: linear-gradient(#262626, #2E4159);
+    display: flex;
+    justify-content: space-between;    
+}
+
+
+footer {
+    background-color: #262626;
+    margin-top: auto;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+div#logo{
+    margin: auto 0;
+}
+div#logo * {
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 0.5em;
+}
+
+div#usuarioInfo *, footer span {
+    display: block;
+    margin-bottom: 0.5em;
+
+}
+
+/* main */
+main {
+    background: linear-gradient( white, gray, #2E4159);
+    padding: 1em;
+    height: 100%;
+}
+
+/* Alerta */
+
+div.alerta{
+    border: 1px solid;
+    padding: 1em;
+    max-width: 400px;
+    margin: 1em auto;
+    word-wrap: break-word;
+    /* position: absolute;
+    top: 0.5em;
+    left: 0;
+    right: 5em;
+    opacity: .9;
+    box-shadow: 0px 2px 4px 0px black;
+    border-radius: 5px; */
+}
+
+div.alerta span{
+    float: right;
+    font-size: 1.25em;
+    cursor: pointer;
+}
+
+div.alerta.erro{
+    background-color: #ff9f9f;
+    color: #700505;
+    border-color: #700505;
+
+}
+/* div.alerta.sucesso{
+    background-color: #afffba;
+    color: #006f05;
+    border-color: #006f05;
+} */
+
+
+
+
+/* Tabela */
+table{
+    border-spacing: 0.1em;
+    margin: 0.5em auto;
+    width: 100%;
+}
+
+table th{
+    background-color: #003366;
+    color: white;
+}
+
+table td, th{
+    padding: 0.5em;
+}
+
+table tfoot td{
+    border-top: 1px solid white;
+    text-align: center;
+}
+
+table tbody tr:nth-child(odd){
+    background-color: #c6d4e2;
+}
+
+table tbody tr:nth-child(even){
+    background-color: #e7ecf1;
+}
+
+table tbody tr:hover{
+    background-color: #cccccc;
+}
+
+table tfoot td{
+    color: white;
+}
+
+div#comandos{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 0.1em;
+    border-bottom: 1px solid white; 
+}
+
+table tbody td:last-child {
+    width: 1%;
+    text-align: center;
+    white-space: nowrap;
+}
