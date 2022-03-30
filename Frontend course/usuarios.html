@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>SGCM</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name='viewport' content='width=device-width, user-scalable=no'>
     <link rel='stylesheet' type='text/css' media='screen' href='estilo.css'>
     <script src='main.js'></script>
 </head>
@@ -20,7 +20,7 @@
         <div id="usuarioInfo">
             <span>Usuário: Administrador (Admin)</span>
             <span>Papel: ADMIN</span>
-            <button type="button">Logout</button>
+            <button type="button" class="excluir">Logout</button>
         </div>
 
     </header>
@@ -33,9 +33,14 @@
             <li><a href="pacientes.html">Pacientes</a></li>
             <li><a href="profissionais.html">Profissionais</a></li>
             <li><a href="convenios.html">Convenios</a></li>
-            <li><a href="unidades.html">Unidades</a></li>
-            <li><a href="especialdiades.html">Especialdiades</a></li>
-            <li><a href="usuarios.html">Usuarios</a></li>
+            <li id="dropdown">
+                <a href="javascript:void(0)">Configurações<i>&#9660;</i></a>
+                <div id="dropdown_conteudo">
+                    <a href="unidades.html">Unidades</a>
+                    <a href="especialdiades.html">Especialdiades</a>
+                    <a href="usuarios.html">Usuarios</a>
+                </div>
+            </li>
         </ul>
     </nav>
     <main>
@@ -49,6 +54,7 @@
             SUCESSO!
         </div>
         <form action="#" method="get">
+            <div class="grid">
             <input type="hidden" name="id">
             <label for="nomeCompleto"Nome>Nome</label>
             <input type="text" name="nomeCompleto" id="nomeCompleto">
@@ -64,7 +70,9 @@
                 <option value="USUARIO">USUARIO</option>
                 <option value="ADMIN">ADMIN</option>
             </select>
-            <input type="submit" name="Enviar">
+        </div>
+        <button type="button">Cancelar</button>
+        <input type="submit" name="Enviar" disabled>
         </form>
         <div id="comandos">
             <button type="button">Adicionar</button>
@@ -93,7 +101,7 @@
                     <td>ADMIN</td>
                     <td>
                         <button type="button">Editar</button>
-                        <button type="button">Excluir</button>
+                        <button type="button" class="excluir" disabled>Excluir</button>
                     </td>
                 </tr>
                 <tr>
@@ -104,7 +112,7 @@
                     <td>USUARIO</td>
                     <td>
                         <button type="button">Editar</button>
-                        <button type="button">Excluir</button>
+                        <button type="button" class="excluir">Excluir</button>
                     </td>
                 </tr>
                 <tr>
@@ -115,7 +123,7 @@
                     <td>USUARIO</td>
                     <td>
                         <button type="button">Editar</button>
-                        <button type="button">Excluir</button>
+                        <button type="button" class="excluir">Excluir</button>
                     </td>
                 </tr>
             </tbody>
